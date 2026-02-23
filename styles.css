@@ -1,0 +1,31 @@
+.parent{
+    padding:0;
+    margin:0;
+    display: inline-block;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.image {
+    padding: 50px 100px ;
+   
+    display: inline-block;
+}
+.list {
+   display: inline-block;
+   padding-left: 250px;
+}
+li {
+    padding: 20px;
+    /* border: 2px solid black; */
+    display: inline-block;
+    font-size: 30px;
+    align-items:start;
+}
+button{
+    font-size:20px;
+    padding: 50px 50px;
+    background-color: white;
+    border-radius: 20px;
+}
