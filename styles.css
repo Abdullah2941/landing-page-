@@ -1,31 +1,103 @@
-.parent{
-    padding:0;
-    margin:0;
-    display: inline-block;
-    width: 100%;
-    justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-
-.image {
-    padding: 50px 100px ;
-   
-    display: inline-block;
+body{
+    margin: 30px 100px;
 }
-.list {
-   display: inline-block;
-   padding-left: 250px;
-}
-li {
-    padding: 20px;
+.nav{
     /* border: 2px solid black; */
-    display: inline-block;
-    font-size: 30px;
-    align-items:start;
+    width: 100%;
+    /* height: 60px; */
 }
-button{
-    font-size:20px;
-    padding: 50px 50px;
+.image{
+    display: inline-block;
+    /* border: 2px solid black; */
+    
+}
+.list{
+    /* display: inline-block; */
+    /* border: 2px solid black; */
+    width: 60%;
+    float: right;
+    padding: 20px 0px;
+}
+h1{
+    display: inline-block;
+    font: 50px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+li{
+    display: inline-block;
+    font-size: 25px;
+    /* font-family: Arial, Helvetica, sans-serif;; */
+    padding: 0px 30px;
+    position: relative;
+}
+.logo{
+    width: 35%;
+    display: inline-block;
+    padding-top: 25px;
+    
+}
+.but{
+    border: 2px solid black;
+    border-radius: 13px;
+    /* background-color: white; */
+    
+    padding: 30px 35px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    border-radius: 20px;
+    }
+.but:hover{
+    background-color: #191A23;
+    color: white;
+
+}
+.hero{
+    width: 500px;
+    font-family:Space Grotesk, sans-serif;
+    display: inline-block;
+}
+.book{
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #191A23;
+    color: white;
+    font-size: 20px;
+    border-radius: 13px;
+    display: block;
+
+
+
+}
+.navi{
+    font-size: 80px;
+
+}
+.para1{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.book:hover{
+    background-color: white;
+    color: #191A23;
+
+}
+.illution{
+    display: inline-block;
+    /* width: 600.46px;
+    height: 515px; */
+    padding-left: 400px;
+    
+}
+.company{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+hr{
+    border-top: 5px solid black;
 }
