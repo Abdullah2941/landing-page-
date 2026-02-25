@@ -98,6 +98,90 @@ li{
     margin-top: 100px;
 
 }
-hr{
-    border-top: 5px solid black;
+.sev{
+    display: inline-block;
+    /* border: 2px solid black; */
+    width: 205px;
+    margin-top: 50px;
+    background-color: #B9FF66;
+
+
+}
+.p1{
+    display: inline-block;
+    margin-left: 50px;
+    font-family:  Space Grotesk, sans-serif;
+    font-weight: bold;
+
+}
+.sev{
+    display: inline-block;
+    /* border: 2px solid black; */
+    width: 205px;
+    margin-top: 50px;
+    background-color: #B9FF66;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: space-between;
+    margin-top: 100px;
+    border: 2px solid black;
+    width: 100%;
+    /* padding: 20px 20px; */
+    
+}
+.card{
+    
+    border: 2px solid black;
+    width: 600px;
+    height: 310px;
+    margin: 30px 120px;
+    border-radius: 45px;
+}
+.card1{
+    background-color: #F3F3F3;
+}
+.card2{
+    background-color:#B9FF66;
+    
+}
+.card3{
+    background-color: #191A23;
+    color: white;
+}
+.card4{
+    background-color: #F3F3F3;
+}
+.card5{
+    background-color: #B9FF66;
+}
+.card6{
+    background-color: #191A23;
+    color: white;
+}
+.card1 h2{
+    display: inline-block;
+    font-size: 30px;
+    font-family: Space Grotesk, sans-serif;
+    padding: 50px 50px;
+}
+.card1 img {
+    display: inline-block;
+    /* padding: 20px 20px; */
+    padding-left: 30px;
+    
+}
+.card1 p{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Space Grotesk, sans-serif;
+    /* padding-left: 45px */
+    padding-bottom: 10px;
+}
+.card1 div{
+    float: right;
+
+   
 }
