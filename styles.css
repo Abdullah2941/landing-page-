@@ -107,6 +107,9 @@ li{
 
 
 }
+.sev{
+    border-radius: 10px;
+}
 .p1{
     display: inline-block;
     margin-left: 50px;
@@ -124,9 +127,10 @@ li{
 .cards{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 100px;
-    border: 2px solid black;
+    margin-bottom: 100px;
+    /* border: 2px solid black; */
     width: 100%;
     /* padding: 20px 20px; */
     
@@ -160,28 +164,207 @@ li{
     background-color: #191A23;
     color: white;
 }
-.card1 h2{
+.head1{
     display: inline-block;
-    font-size: 30px;
-    font-family: Space Grotesk, sans-serif;
     padding: 50px 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
-.card1 img {
+.head1 h2{
+    background-color: #B9FF66;
+}
+.icon{
     display: inline-block;
-    /* padding: 20px 20px; */
-    padding-left: 30px;
+    padding-left: 50px;
+}
+.icon:hover{
+    cursor: pointer;
+    }
+.para01{
+    display: inline-block;
+    font-family: Space Grotesk, sans-serif;
+    font-size: 30px;
+    /* padding-top: 10px; */
+}
+.para01:hover{
+    cursor: pointer;
+    text-decoration: underline; 
+    transition: 0.3s;
+
+}
+.img1{
+    float: right;
+    padding-right: 50px;
+    padding-top: 60px;
     
 }
-.card1 p{
+.img2{
+    float: right;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+.head2{
+    display: inline-block;
+    padding: 50px 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.head2  h2{
+    background-color: white;
+}
+.img3{
+    float: right;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+.head3{
+    display: inline-block;
+    padding: 50px 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.head3  h2{
+    background-color: white;
+    color: #191A23;
+}
+.icon .on{
+    filter: invert(100%);
+}
+.img4{
+    float: right;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+.head4{
+    display: inline-block;
+    padding: 50px 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.head4  h2{
+    background-color: #B9FF66;
+}
+.img5{
+    float: right;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+.head5{
+    display: inline-block;
+    padding: 50px 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.head5  h2{
+    background-color: white;
+    color: #191A23;
+}
+.img6{
+    float: right;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+.head6{
+    display: inline-block;
+    padding: 50px 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.head6  h2{
+    background-color: white;
+    color: #191A23;
+}
+.cardbar{
+    display: inline-block;
+    /* border: 2px solid black; */
+    width: 80%;
+        height: 350px;
+    margin: 30px 120px;
+    border-radius: 45px;
+    background-color: #F3F3F3;
+    
+
+
+}
+.barh2{
+    display: inline-block;
+    padding-left: 120px;
+    padding-top: 50px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+.barp2{
+    
+    font-family: Space Grotesk, sans-serif;
+    font-size: 18px;
+    padding-left: 120px;
+}
+.imgbar{
+
+    float: right;
+    padding-right: 50px;
+    /* padding-top: 20px; */
+    padding-bottom: 50px;
+}
+.book1{
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #191A23;
+    color: white;
+    font-size: 20px;
+    border-radius: 13px;
+    display: block;
+    margin-left: 120px;
+}
+.sev1{
+    display: inline-block;
+}
+.sev1 h1{
+    display: inline-block;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    background-color: #B9FF66;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+.parahori{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-left: 50px;
+padding: 100px 200px;
+background-color: #191A23;
+color: white;
+width: 70%;
+border-radius: 45px;
+    
+}
+.horip{
+    font-family: Space Grotesk, sans-serif;
+    font-weight: bold;
+    
+    
+}
+.b{
     display: inline-block;
     font-size: 30px;
-    font-weight: bold;
-    font-family: Space Grotesk, sans-serif;
-    /* padding-left: 45px */
-    padding-bottom: 10px;
 }
-.card1 div{
-    float: right;
+.hori{
+    border-right: 2px solid white;
+    padding-left: 20px ;
+}
+.b{
+    color: #B9FF66;
+}
 
-   
-}
+
+
+
