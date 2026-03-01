@@ -369,7 +369,38 @@ border-radius: 45px;
     cursor: pointer;
     text-decoration: underline;
 }
- 
+
+.block1{
+    border: 2px solid black;
+}
+.num{
+    font-size: 60px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Space Grotesk, sans-serif;
+}
+.cont{
+    display: inline;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px ; 
+}
+.minus{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    padding: 20px 20px;
+
+}
+
 
 
 
