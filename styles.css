@@ -112,9 +112,10 @@ li{
 }
 .p1{
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 55px;
     font-family:  Space Grotesk, sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 18px;
 
 }
 .sev{
@@ -371,34 +372,60 @@ border-radius: 45px;
 }
 
 .block1{
-    border: 2px solid black;
+    border: 2px solid #000;
+    padding: 50px;
+    border-radius: 45px;
+    background-color: #B9FF66;
 }
-.num{
-    font-size: 60px;
+
+.plus-btn {
+   float: right;
+   border-radius: 50%;
+    
+}
+
+.plus-btn:hover {
+    cursor: pointer;
+    background-color: #000;
+    color:white;
+}
+.consol{
     display: inline-block;
+    font-size: 30px;
     font-weight: bold;
     font-family: Space Grotesk, sans-serif;
+    padding-left: 20px;
+    /* padding-top: 10px; */
 }
-.cont{
+.num1{
     display: inline;
-    font-size: 35px;
+    font-family: Space Grotesk, sans-serif;
     font-weight: bold;
-    padding: 20px ; 
 }
-.minus{
-    width:40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #000;
-    float: right;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #fff;
-    margin-right: 20px;
-    margin-top: 20px;
-    font-size: 50px;
-    padding: 20px 20px;
+.client{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 40px;
+    margin-top: 50px;
+    
+}
+.client1{
+    border: 2px solid black;
+    border-radius: 45px;
+    padding: 50px 80px;
+}
+.client1 p{
+    font-family: Space Grotesk, sans-serif;
+    font-size: 20px;
 
+}
+.social{
+    float: right;
+    
+}
+.social:hover{
+    cursor: pointer;
 }
 
 
