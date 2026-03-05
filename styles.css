@@ -1,26 +1,68 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark:#191A23;
+    --color-light:#F3F3F3;
+    --color-accent:#B9FF66;
+    --color-white:#fff;
+    --font-primary: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    --transition:0.3s;
+}
+
+/* make media elements flexible */
+img,picture,video,svg{
+    max-width:100%;
+    height:auto;
+}
+
+/* specific image adjustments */
+.illustration {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.company .com1 img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 body{
-    margin: 30px 100px;
+    max-width:1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: var(--font-primary);
+    color: var(--color-dark);
+    background:#fff;
 }
 .nav{
-    /* border: 2px solid black; */
-    width: 100%;
-    /* height: 60px; */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    width:100%;
+    padding:10px 5%;
 }
 .image{
-    display: inline-block;
-    /* border: 2px solid black; */
-    
+    display:inline-block;
 }
 .list{
-    /* display: inline-block; */
-    /* border: 2px solid black; */
-    width: 60%;
-    float: right;
-    padding: 20px 0px;
+    width:auto;
+    float:none;
+    padding:10px 0;
+}
+.nav .list ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
 }
 h1{
     display: inline-block;
@@ -29,16 +71,13 @@ h1{
 }
 li{
     display: inline-block;
-    font-size: 25px;
-    /* font-family: Arial, Helvetica, sans-serif;; */
-    padding: 0px 30px;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    padding: 0 15px;
     position: relative;
 }
 .logo{
-    width: 35%;
     display: inline-block;
-    padding-top: 25px;
-    
+    padding-top: 0;
 }
 .but{
     border: 2px solid black;
@@ -57,7 +96,8 @@ li{
 
 }
 .hero{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     font-family:Space Grotesk, sans-serif;
     display: inline-block;
 }
@@ -74,11 +114,10 @@ li{
 
 }
 .navi{
-    font-size: 80px;
-
+    font-size: clamp(2.5rem, 8vw, 5rem);
 }
 .para1{
-    font-size: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     line-height: 1.5;
 }
 .book:hover{
@@ -91,25 +130,25 @@ li{
     display: inline-block;
     /* width: 600.46px;
     height: 515px; */
-    padding-left: 400px;
-    
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
 }
 .company{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 100px;
 
 }
 .sev{
     display: inline-block;
     /* border: 2px solid black; */
-    width: 205px;
+    max-width: 205px;
+    width: 100%;
     margin-top: 50px;
-    background-color: #B9FF66;
-
-
-}
-.sev{
+    background-color: var(--color-accent);
     border-radius: 10px;
 }
 .p1{
@@ -119,13 +158,6 @@ li{
     /* font-weight: bold; */
     font-size: 18px;
 
-}
-.sev{
-    display: inline-block;
-    /* border: 2px solid black; */
-    width: 205px;
-    margin-top: 50px;
-    background-color: #B9FF66;
 }
 .cards1111{
     display: grid;
@@ -141,9 +173,10 @@ li{
 .card11{
     
     border: 2px solid black;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 310px;
-    margin: 30px 120px;
+    margin: 30px auto;
     border-radius: 45px;
 }
 .card11111{
@@ -297,18 +330,21 @@ li{
 }
 .barh2{
     display: inline-block;
-    padding-left: 120px;
+    padding-left: clamp(20px, 10vw, 120px);
     padding-top: 50px;
     font-family: Space Grotesk, sans-serif;
     font-weight: bold;
     font-size: 35px;
-
+    width: 100%;
+    text-align: center;
 }
 .barp2{
     
     font-family: Space Grotesk, sans-serif;
     font-size: 18px;
-    padding-left: 120px;
+    padding-left: clamp(20px, 10vw, 120px);
+    width: 100%;
+    text-align: center;
 }
 .imgbar{
 
@@ -325,7 +361,8 @@ li{
     font-size: 20px;
     border-radius: 13px;
     display: block;
-    margin-left: 120px;
+    margin: 20px auto 0;
+    text-align: center;
 }
 .sev1{
     display: inline-block;
@@ -341,14 +378,10 @@ li{
 .parahori{
     display: flex;
     justify-content: space-between;
-    /* margin-top: 150px;
-    margin-left: 50px; */
-padding: 100px 200px;
-background-color: #191A23;
-color: white;
-/* width: 100%; */
-border-radius: 45px;
-    
+    padding: clamp(40px,10vw,100px) clamp(20px,15vw,200px);
+    background-color: #191A23;
+    color: white;
+    border-radius: 45px;
 }
 .horip{
     font-family: Space Grotesk, sans-serif;
@@ -466,8 +499,8 @@ border-radius: 45px;
   overflow:hidden;          /* 🔥 important */
   width:100%;
   /* display:flex;
-  justify-content:center;
-} */}
+  justify-content:center; */
+}
 
 /* TRACK */
 .track{
@@ -501,7 +534,6 @@ border-radius: 45px;
   position:absolute;
   bottom:-18px;
   left:50%;
-  transform:translateY(-50%) rotate(45deg);
   width:30px;
   height:30px;
   background:#111827;
@@ -865,5 +897,242 @@ hr{
 .footer-bottom a{
   color:#fff;
   text-decoration:underline;
+}
+
+/* general beautification */
+button, .btn, .book, .book1, .all, .but {
+  font-family: var(--font-primary);
+  transition: var(--transition);
+}
+
+button:hover, .btn:hover, .book:hover, .book1:hover, .all:hover, .but:hover {
+  opacity: 0.9;
+}
+
+h1,h2,h3,h4{
+  font-family: var(--font-primary);
+}
+
+.card11, .cardbar, .client1, .block1 {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sev h1, .sev1 h1{
+  font-size: clamp(1.5rem,4vw,2.5rem);
+  color: var(--color-dark);
+}
+
+.wrapper, .contact-wrapper {
+  padding: 80px 0;
+}
+
+
+
+/* ====== Responsive Styles ====== */
+@media (max-width: 1024px) {
+  body {
+    margin: 20px 40px;
+  }
+
+  .nav {
+    padding: 10px 0;
+  }
+
+  .nav .logo,
+  .nav .list {
+    display: block;
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .nav .list {
+    padding: 10px 0;
+  }
+
+  .nav .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav .list li {
+    display: inline-block;
+    padding: 10px 15px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero h1.navi {
+    font-size: 36px;
+  }
+
+  .para1 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .illution {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .company {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .company .com1 {
+    margin: 10px;
+  }
+
+  .cards1111 {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card11 {
+    width: auto;
+    margin: 20px auto;
+  }
+
+  .cardbar {
+    text-align: center;
+  }
+
+  /* make all floated images stack */
+  .img1, .img2, .img3, .img4, .img5, .img6, .imgbar {
+    float: none;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .imgbar {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .parahori {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  /* override any large padding-left values */
+  .illution {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .barh2, .barp2, .book1 {
+    padding-left: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hori,
+  .hori1 {
+    border-right: none;
+    padding-left: 0;
+  }
+
+  .client {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .client1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* contact form stacks on smaller layouts */
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .contact-right {
+    padding-left: 0;
+    height: auto;
+  }
+
+  .client {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* mid-size adjustments between tablet and phone */
+  .nav .list ul {
+    flex-direction: column;
+  }
+
+  .nav .list li {
+    padding: 8px 0;
+  }
+
+  .hero h1.navi {
+    font-size: 32px;
+  }
+
+  .cards1111 {
+    grid-template-columns: 1fr;
+  }
+
+  .sev,
+  .sev1 {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav .list ul {
+    flex-direction: column;
+  }
+
+  .nav .list li {
+    padding: 8px 0;
+  }
+
+  .hero h1.navi {
+    font-size: 28px;
+  }
+
+  .para1,
+  .para01 {
+    font-size: 16px;
+  }
+
+  .book,
+  .book1,
+  .all {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .card11 {
+    padding: 20px;
+  }
+
+  .barh2 {
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  .barp2 {
+    padding-left: 20px;
+  }
+
+  .parahori {
+    padding: 40px 10px;
+  }
 }
 
