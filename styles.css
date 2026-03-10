@@ -923,6 +923,50 @@ hr{
   .nav .list { width: auto; float:none; text-align:center; }
   .nav .list ul { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
   .logo { width: auto; }
+
+  .img1{padding: 0; margin: 0; padding-right: 10px; padding-top: 60px;    width: 170px;  }
+  .head1 {* {padding: 0; margin: 0;}}
+  .head1 h2{ width: 100px;    font-size: 20px;}
+
+
+  .img2{padding: 0; margin: 0; padding-right: 10px; padding-top: 60px;    width: 170px;  }
+  .head2 {* {padding: 0; margin: 0;}}
+  .head2 h2{ width: 100px;    font-size: 20px;}
+
+  .img3{padding: 0; margin: 0; padding-right: 10px; padding-top: 60px;    width: 170px;  }
+  .head3{* {padding: 0; margin: 0;}}
+  .head3 h2{ width: 100px;    font-size: 20px;}
+
+  .img4{padding: 0; margin: 0; padding-right: 10px; padding-top: 60px;    width: 170px;  }
+  .head4{* {padding: 0; margin: 0;}}
+  .head4 h2{ width: 100px;    font-size: 20px;}
+
+  .img5{padding: 0; margin: 0; padding-right: 10px; padding-top: 60px;    width: 170px;  }
+  .head5{* {padding: 0; margin: 0;}}
+  .head5 h2{ width: 100px;    font-size: 20px;}
+
+  .img6{padding: 0; margin: 0; padding-right: 10px; padding-top: 60px;    width: 170px;  }
+  .head6{* {padding: 0; margin: 0;}}
+  .head6 h2{ width: 100px;    font-size: 20px;}
+
+
+
+
+  .hori1{padding-left: 50px;}
+  .hori{padding-left:50px ;}
+  .Track{gap: 30px;}
+  .Card{min-width: 250px; padding: 10px;}
+  .subscribe-box{width: 350px;}
+  .imgbar{width: 80%; padding-bottom: 35px;padding-top: 35px;padding-right: 0px;}
+
+
+
+
+
+
+
+
+
  
   .hero, .illution { display:block; width:100%; padding:0; }
   .hero { text-align:center; }
@@ -953,6 +997,8 @@ hr{
   .nav .list ul li { display:block; padding:10px 0; }
   .but { margin: auto; }
   .but, .book, .book1, .btna, .all { padding:15px 20px; font-size:16px; }
+
+  /* .head1{* {padding: 0; margin: 0;}} */
   
   .para1, .barp2, .p1 p { font-size:16px; }
   .sev h1, .sev1 h1 { font-size:24px; }
